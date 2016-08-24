@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCloudViewController">
+            <connections>
+                <outlet property="screenLabel" destination="ZGR-Tr-vgA" id="OQK-tv-ZLQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="center" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="94" width="414" height="642"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq4-aS-L7Q">
+                    <rect key="frame" x="62" y="246" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.92958524214659688" green="0.92958524214659688" blue="0.92958524214659688" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="登录用户1"/>
+                    <connections>
+                        <action selector="loginUser1:" destination="-1" eventType="touchUpInside" id="ufD-jt-ys2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gl1-Ep-IcB">
+                    <rect key="frame" x="62" y="301" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.92958524210000004" green="0.92958524210000004" blue="0.92958524210000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="登录用户2"/>
+                    <connections>
+                        <action selector="loginUser2:" destination="-1" eventType="touchUpInside" id="pWh-l8-kcb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozT-Ag-Lj8">
+                    <rect key="frame" x="62" y="356" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.92958524210000004" green="0.92958524210000004" blue="0.92958524210000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="退出"/>
+                    <connections>
+                        <action selector="logOut:" destination="-1" eventType="touchUpInside" id="ctX-1F-8mc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHw-tP-FAQ">
+                    <rect key="frame" x="204" y="246" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.92958524210000004" green="0.92958524210000004" blue="0.92958524210000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="个人聊天"/>
+                    <connections>
+                        <action selector="startChat:" destination="-1" eventType="touchUpInside" id="P1z-rl-B9H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hf-rZ-dzY">
+                    <rect key="frame" x="204" y="356" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.92958524210000004" green="0.92958524210000004" blue="0.92958524210000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="视频"/>
+                    <connections>
+                        <action selector="startVideo:" destination="-1" eventType="touchUpInside" id="p6G-Ec-XfP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqx-pz-rx2">
+                    <rect key="frame" x="204" y="301" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.92958524210000004" green="0.92958524210000004" blue="0.92958524210000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="群组聊天"/>
+                    <connections>
+                        <action selector="startGroup:" destination="-1" eventType="touchUpInside" id="EBu-lX-1hN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGR-Tr-vgA">
+                    <rect key="frame" x="62" y="69" width="275" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.99735446439438202" blue="0.047301156382870913" alpha="0.24035904255319149" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>
